@@ -145,7 +145,14 @@
                 <configuration>
                     <warName>Tracker</warName>
                     <webXml>WebContent/WEB-INF/web.xml</webXml>
-
+		<resource>
+                        <filtering>true</filtering>
+                        <targetPath>WEB-INF</targetPath>
+                        <directory>WebContent/WEB-INF</directory>
+                        <includes>
+                            <include>dispatcher-servlet.xml</include>
+                        </includes>
+                    </resource>
                 </configuration>
             </plugin>
             
