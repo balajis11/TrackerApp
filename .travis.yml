@@ -3,5 +3,5 @@ jdk:
   - oraclejdk7
   - openjdk7
   
-script: mvn clean install -DskipTests=true && mvn cf:push tracker
+script: mvn clean install -DskipTests=true --settings settings.xml cf:push tracker
 
