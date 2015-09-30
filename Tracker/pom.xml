@@ -158,7 +158,7 @@
                     <server>mycloudfoundry-instance</server>
                     <target>http://api.run.pivotal.io</target>
                     <org>TrackerApp</org>
-                    <space>development</space>
+                    <space>trackerapp</space>
                     <appname>trackerapp</appname>
                     <url>trackerapp.cfapps.io</url>
                     <memory>512</memory>
