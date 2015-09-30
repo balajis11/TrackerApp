@@ -70,16 +70,15 @@
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
-            <version>1.2.15</version>
+            <version>1.2.17</version>
             <scope>runtime</scope>
         </dependency>
 
-	<dependency>
-		<groupId>javax.mail</groupId>
-		<artifactId>mail</artifactId>
-		<version>1.4.3</version>
-		
-	</dependency>
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.3</version>
+		</dependency>
 
         <!-- @Inject -->
         <dependency>
@@ -148,6 +147,36 @@
                 </configuration>
             </plugin>
             
+            
+             <plugin>
+                <groupId>org.cloudfoundry</groupId>
+                <artifactId>cf-maven-plugin</artifactId>
+                <version>1.1.1</version>
+                <configuration>
+                    <server>mycloudfoundry-instance</server>
+                    <target>http://api.run.pivotal.io</target>
+                    <org>DeviceTracking</org>
+                    <space>development</space>
+                    <appname>tracker</appname>
+                    <url>tracker.cfapps.io</url>
+                    <memory>512</memory>
+                    <diskQuota>1024</diskQuota>
+                    <healthCheckTimeout>60</healthCheckTimeout>
+                    <env>
+                        <ENV-VAR-NAME>env-var-value</ENV-VAR-NAME>
+                    </env>
+                    <mergeEnv>true</mergeEnv>
+                    <services>
+                        <service>
+                                <name>logger-web-console</name>
+                                <label>user-provided</label>
+                                <syslogDrainUrl>syslog://log.example.com:5000</syslogDrainUrl>
+                                <userProvidedCredentials/>
+                        </service>
+                    </services>
+                </configuration>
+            </plugin>
+        
             
             
         </plugins>
