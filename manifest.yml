@@ -3,5 +3,4 @@ applications:
 - name: Tracker
   memory: 512M
   path: Tracker/target/Tracker.war 
-  buildpack: https://github.com/cloudfoundry/java-buildpack.git
   host : trackersapp
