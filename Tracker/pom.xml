@@ -157,10 +157,10 @@
                 <configuration>
                     <server>mycloudfoundry-instance</server>
                     <target>http://api.run.pivotal.io</target>
-                    <org>DeviceTracking</org>
+                    <org>TrackerApp</org>
                     <space>development</space>
-                    <appname>tracker</appname>
-                    <url>cfapps.io</url>
+                    <appname>trackerapp</appname>
+                    <url>trackerapp.cfapps.io</url>
                     <memory>512</memory>
                     <diskQuota>1024</diskQuota>
                     <healthCheckTimeout>60</healthCheckTimeout>
