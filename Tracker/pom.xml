@@ -160,7 +160,7 @@
                     <org>DeviceTracking</org>
                     <space>development</space>
                     <appname>tracker</appname>
-                    <url>tracker</url>
+                    <url>http://trackers.cfapps.io</url>
                     <memory>512</memory>
                     <diskQuota>1024</diskQuota>
                     <healthCheckTimeout>60</healthCheckTimeout>
