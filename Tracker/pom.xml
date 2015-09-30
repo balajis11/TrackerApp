@@ -35,11 +35,7 @@
             <version>${org.springframework-version}</version>
         </dependency>
         
-          <dependency>  
-            <groupId>org.cloudfoundry</groupId>  
-            <artifactId>cloudfoundry-client-lib</artifactId>  
-            <version>1.0.6</version>  
-        </dependency>  
+        
 
 
         <!-- AspectJ -->
@@ -151,7 +147,7 @@
              <plugin>
                 <groupId>org.cloudfoundry</groupId>
                 <artifactId>cf-maven-plugin</artifactId>
-                <version>1.1.1</version>
+                <version>1.1.2</version>
                 <configuration>
                     <server>mycloudfoundry-instance</server>
                     <target>http://api.run.pivotal.io</target>
