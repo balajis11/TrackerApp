@@ -3,4 +3,5 @@ jdk:
   - oraclejdk7
   - openjdk7
   
-script: mvn clean install -DskipTests=true 
+script: mvn clean install -DskipTests=true cf:push -Dcf.appname -Dcf.org -Dcf.space -Dcf.url -Dcf.instances -Dcf.memory -Dcf.no-start
+
